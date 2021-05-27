@@ -1,0 +1,49 @@
+{
+	"data": {
+		"modeling_male_speakers": 40,
+		"modeling_female_speakers": 40,
+		"modeling_train_time_per_speaker": 9999,
+		"modeling_val_time_per_speaker": 45,
+		"modeling_test_time_per_speaker": 45,
+		"adaptation_male_speakers": 5,
+		"adaptation_female_speakers": 5,
+		"adaptation_train_time_per_speaker": 9999,
+		"adaptation_val_time_per_speaker": 30,
+		"adaptation_test_time_per_speaker": 30,
+		"min_utterance_samples": 0,
+		"max_utterance_samples": 999999,
+		"priorize_longer_speakers": true,
+		"priorize_longer_utterances": false
+	},
+	"conditionals": {
+		"conds_speaker_type": "embedding",
+		"conds_speaker_size": 15,
+		"conds_utterance_type": "acoustic",
+		"conds_utterance_linguistic_emb_size": 10,
+		"conds_size": 50
+	},
+	"model": {
+		"sequence_length": 13,
+		"ratios": [
+			20,
+			4
+		],
+		"rnn_layers": [
+			1,
+			1
+		],
+		"rnn_hidden_size": [
+			1024,
+			1024
+		],
+		"q_type_ulaw": true,
+		"q_levels": 256
+	},
+	"training": {
+		"batch_size": 128,
+		"lr": 0.0001,
+		"lr_scheduler": true,
+		"lr_scheduler_patience": 3,
+		"lr_scheduler_factor": 0.5
+	}
+}
