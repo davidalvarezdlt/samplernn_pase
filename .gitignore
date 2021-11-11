@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.mypy_cache/
+*.py[cod]
+*$py.class
+
+# MacOS .DS_Store
+.DS_Store
+
+# Virtual Environment
+.venv
+venv/
+ENV/
+
+# Pycharm Project
+.idea/
+
+# Data Folder
+data/*
+!data/.gitkeep
+
+# PyTorch Lightning Folder
+lightning_logs/*
+!lightning_logs/.gitkeep
